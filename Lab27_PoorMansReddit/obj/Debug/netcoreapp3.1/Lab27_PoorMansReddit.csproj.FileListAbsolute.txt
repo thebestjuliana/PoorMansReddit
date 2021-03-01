@@ -36,3 +36,5 @@ C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\obj\Debug\
 C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\obj\Debug\netcoreapp3.1\Lab27_PoorMansReddit.genruntimeconfig.cache
 C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\obj\Debug\netcoreapp3.1\Lab27_PoorMansReddit.csproj.CopyComplete
 C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewSubReddit.cshtml.g.cs
+C:\Users\sheeh\source\repos\Lab27_PoorMansReddit\Lab27_PoorMansReddit\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorSubReddit.cshtml.g.cs

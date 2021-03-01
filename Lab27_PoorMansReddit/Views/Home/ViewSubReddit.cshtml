@@ -1,0 +1,42 @@
+﻿@model SubReddit
+
+@foreach (var item in Model.data.children.ToList())
+{
+    
+  
+
+        string link = "https://www.reddit.com" + item.data.permalink;
+
+        <h2>@item.data.title</h2>
+        <a href="@link">@item.data.title</a>
+        <br />
+        <p>@item.data.selftext</p>
+        <br />
+        if (item.data.thumbnail != "self")
+        {
+
+
+            if (item.data.is_video)
+            {
+
+                <video controls="controls" src="@item.data.media.reddit_video.fallback_url" width="@item.data.media.reddit_video.width">
+                    Your browser does not support the HTML5 Video element.
+                </video>
+                <br />
+
+            }
+            else if (item.data.url.EndsWith(".html") || item.data.url.Contains(".com"))
+            {
+
+            }
+            else
+            {
+
+                <img src="@item.data.url" alt="@item.data.name" width="700">
+                <br />
+
+            }
+          
+        
+    }
+}

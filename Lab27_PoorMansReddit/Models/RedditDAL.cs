@@ -11,9 +11,10 @@ namespace Lab27_PoorMansReddit.Models
     public class RedditDAL
     {
 
-        public string GetData()
+        public SubReddit ConvertToSubReddit(string s)
         {
-            string url = @$"https://www.reddit.com/r/aww/.json";
+            
+            string url = $"https://www.reddit.com/r/{s}/.json";
 
             HttpWebRequest request = WebRequest.CreateHttp(url);
 
@@ -21,13 +22,7 @@ namespace Lab27_PoorMansReddit.Models
 
             StreamReader rd = new StreamReader(response.GetResponseStream());
             string JSON = rd.ReadToEnd();
-
-            return JSON;
-        }
-
-        public SubReddit ConvertToSubReddit()
-        {
-            string subredditData = GetData();
+            string subredditData = JSON;
             SubReddit subreddit = JsonConvert.DeserializeObject<SubReddit>(subredditData);
             return subreddit;
         }

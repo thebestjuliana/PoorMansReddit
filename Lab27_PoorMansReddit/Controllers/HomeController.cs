@@ -18,11 +18,42 @@ namespace Lab27_PoorMansReddit.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
-            SubReddit sub = redditDAL.ConvertToSubReddit();
-            return View(sub);
+            return View();
+        }
+        //[HttpPost]
+        //public IActionResult Index(string subredditName)
+        //{
+        //    try
+        //    {
+        //        return RedirectToAction("ViewSubReddit", "Home", subredditName);
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        return RedirectToAction("ErrorSubReddit");
+        //    }
+            
+        //}
+        public IActionResult ErrorSubReddit()
+        {
+            return View();
+        }
+
+        public IActionResult ViewSubReddit(string subredditName)
+        {
+            try
+            {
+                SubReddit sub = redditDAL.ConvertToSubReddit(subredditName);
+                return View(sub);
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("ErrorSubReddit");
+
+            } 
+            
         }
 
         public IActionResult Privacy()
