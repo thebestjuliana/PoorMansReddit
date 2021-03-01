@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x8IMC91FmZ2YCysC6X8UsEy+1FCxeG8FhakejtWsRJMtVVVn8kZ6axPN9V+/FI+WhZSgKgudJWHhKz24+M3n6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sheeh\\source\\repos\\Lab27_PoorMansReddit\\Lab27_PoorMansReddit\\Lab27_PoorMansReddit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sheeh\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
